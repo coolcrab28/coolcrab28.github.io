@@ -1,1 +1,3 @@
-<?php include_once(“home.html”); ?>
+<?php 
+print "<h1>Hello Heroku!</h1>";
+?>
