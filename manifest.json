@@ -1,6 +1,6 @@
 {
-  "name": "web.dev",
-  "short_name": "web.dev",
+  "name": "cOOLcRAB28",
+  "short_name": "cOOLcRAB28",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
@@ -26,8 +26,8 @@
   ],
   "shortcuts": [
     {
-      "name": "Measure",
-      "url": "/measure/"
+      "name": "SMS",
+      "url": "/SMS"
     }
   ]
 }
