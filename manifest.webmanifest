@@ -2,7 +2,7 @@
   "name": "cOOLcRAB28",
   "short_name": "cOOLcRAB28",
   "start_url": "/",
-  "display": "standalone",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "background_color": "#3740ff",
   "theme_color": "#000",
