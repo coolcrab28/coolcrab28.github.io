@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Brython</title>
+<title>Python Interpreter</title>
 <link rel="stylesheet" href="../brython.css">
 <link rel="stylesheet" href="console.css">
 
@@ -64,18 +64,18 @@ function run_js(){
 </script>
 </head>
 <body onload="brython({debug:1})">
-<table id="container">
+<table id="container" style="border: 1px solid black; width: 100vw; height: 100vh;">
   <tr>
     <td>Python version: <span id="version"></span></td>
     <td></td>
     <td>
         <button id="run"> ▶ Run</button>
+        <button id='d'>dark mode</button>
     </td>
   </tr>
 
   <tr>
-    <td id="left">
-      <div id="editor" style="width:100%; font-size: 20px;"></div>
+    <td id="left">      <div id="editor" style="width:100%; font-size: 20px; visibility: hidden;"></div>
     </td>
     <td id="separator"></td>
     <td id="right">

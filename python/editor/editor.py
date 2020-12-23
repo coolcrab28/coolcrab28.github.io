@@ -11,12 +11,13 @@ from browser.widgets import dialog
 # set height of container to 75% of screen
 _height = doc.documentElement.clientHeight
 _s = doc['container']
-_s.style.height = '%spx' % int(_height * 0.85)
+# _s.style.height = '%spx' % int(_height * 0.85)
 
 has_ace = True
 try:
     editor = window.ace.edit("editor")
-    editor.setTheme("ace/theme/twilight")
+    # editor.setTheme("ace/theme/terminal")
+    doc["editor"].style.visibility = 'visible'
     editor.session.setMode("ace/mode/python")
     editor.focus()
 
@@ -35,10 +36,8 @@ except:
     editor.setValue = set_value
     has_ace = False
 
-if hasattr(window, 'localStorage'):
-    from browser.local_storage import storage
-else:
-    storage = None
+
+storage = None
 
 if 'set_debug' in doc:
     __BRYTHON__.debug = int(doc['set_debug'].checked)
