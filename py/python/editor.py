@@ -15,11 +15,15 @@ _s = doc['container']
 
 has_ace = True
 try:
+    
     editor = window.ace.edit("editor")
-    # editor.setTheme("ace/theme/terminal")
-    doc["editor"].style.visibility = 'visible'
-    editor.session.setMode("ace/mode/python")
+    def show():
+        doc["editor"].style.visibility = 'visible'
+    # editor.setTheme("ace/theme/dracula")
+    # editor.session.setMode("ace/mode/python")
+    
     editor.focus()
+    show()
 
     editor.setOptions({
      'enableLiveAutocompletion': True,
@@ -59,6 +63,7 @@ def reset_src_area():
         editor.value = storage["py_src"]
     else:
         editor.value = 'for i in range(10):\n\tprint(i)'
+        editor.focus()
 
 
 class cOutput:

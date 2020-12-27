@@ -70,7 +70,7 @@ function run_js(){
     <td></td>
     <td>
         <button id="run"> ▶ Run</button>
-        <button id='d'>dark mode</button>
+        <!-- <button id='d'>dark mode</button> -->
     </td>
   </tr>
 
@@ -79,10 +79,24 @@ function run_js(){
     </td>
     <td id="separator"></td>
     <td id="right">
-      <textarea id="console" autocomplete="off" spellcheck="false" style="font-size: 20px;" readonly></textarea>
+      <textarea id="console" autocomplete="off" spellcheck="false" style="font-size: 20px; background-color: #282a36;" readonly></textarea>
     </td>
   </tr>
 </table>
 
+</script>
+<script>
+  // Initialize your Ace Editor
+var editor = (function() {
+    var aceEditor = ace.edit("editor");
+    // default theme
+    aceEditor.setTheme("ace/theme/dracula");
+    aceEditor.getSession().setMode("ace/mode/python");
+    return aceEditor;
+})();
+
+// Change theme on the fly
+// editor.setTheme("ace/theme/clouds_midnight");
+</script>
 </body>
 </html>
