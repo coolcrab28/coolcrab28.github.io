@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "io.github.coolcrab28.twa",
+                   "sha256_cert_fingerprints": ["FA:5D:C0:52:19:53:C0:BA:F7:13:14:AB:8E:52:9D:47:3B:60:46:8D:6E:3A:F8:B9:7C:0B:CF:04:A0:1D:21:43"] }
+    }]
