@@ -10,7 +10,12 @@ const assets = [
   '/SMS/style.css',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
-  '/pages/fallback.html'
+  '/pages/fallback.html',
+  '/py/python',
+  '/py/python/console.html',
+  '/py/python/editor.html',
+  '/py/python/console.css',
+  '/py/'
 ];
 
 // cache size limit function
