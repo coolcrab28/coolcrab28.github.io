@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>OCS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="org">Name of the Organization</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="org" name="organization" placeholder="Name of the organization" value="google">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Number of repositories</label>
+          </div>
+          <div class="col-75">
+            <input type="number" id="n" name="number" value=10>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="lname">Number of oldest forkers</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="m" name="number_m" value=5>
+            </div>
+          </div>
+        
+        
+        <br>
+        <div class="row">
+          <input id="sbm" type="button" onclick="btn_click()" value="Submit">
+        </div>
+        <br><br><br>
+
+        <div id="modal_container">
+
+          <div id="myModal" class="modal">
+            
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="inMod">Some text in the Modal..</p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <center>
+          <img src="img/loading.gif" id='loader' height="70px" alt="">
+          <div id="tabll">
+            <center>
+<br><br><br>
+              <table id="dataTable">
+                <thead>
+                  <tr>
+                    <th id="tid" scope="col">ID</th>
+                    <th id="tnam" scope="col">Name</th>
+                    <th id="tfor" scope="col">Number of forks</th>
+                    
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </center>
+          </div>
+        </center>
+      </div>
+
+      <!-- <script src="js/main.js"></script> -->
+<script src="js/index.js"></script>
+</body>
+</html>
